@@ -1,0 +1,19 @@
+---
+
+develop:
+  app:
+    urls:
+      api_host: https://api.fasthome.io
+      api_url: https://api.fasthome.io/api/v1.1
+      admin: https://admin.fasthome.io
+    secrets:
+      secret: '{"client_secret": "h1Ualk42DmMioIAYQhxXaTqKPvRrxgwNaIicAcpi","grant_type": "password","client_id": 5}'
+
+production:
+  app:
+    urls:
+      api_host: https://api.fasthome.io
+      api_url: https://api.fasthome.io/api/v1.1
+      admin: https://admin.fasthome.io
+    secrets:
+      secret: '{"client_secret": "h1Ualk42DmMioIAYQhxXaTqKPvRrxgwNaIicAcpi","grant_type": "password","client_id": 5}'

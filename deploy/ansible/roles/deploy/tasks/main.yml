@@ -1,0 +1,35 @@
+---
+- name: Make release directory
+  file:
+    path: "{{ project.root }}/{{ version }}"
+    state: directory
+    owner: "{{ user.user }}"
+    group: "{{ user.group }}"
+  tags:
+    - develop
+
+- name: Copy release develop archive to the destination server
+  copy:
+    src: "../../{{ version }}.zip"
+    dest: "{{ project.root }}/{{ version }}/release.zip"
+    owner: "{{ user.user }}"
+    group: "{{ user.group }}"
+  tags:
+    - develop
+
+- name: Uncompress release archive on the destionation server
+  unarchive:
+    src: "{{ project.root }}/{{ version }}/release.zip"
+    dest: "{{ project.root }}/{{ version }}"
+    owner: "{{ user.user }}"
+    group: "{{ user.group }}"
+    remote_src: yes
+  tags:
+    - develop
+
+- name: Drop release archive
+  file:
+    state: "absent"
+    path: "{{ project.root }}/{{ version }}/release.zip"
+  tags:
+    - develop

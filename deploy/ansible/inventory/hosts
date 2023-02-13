@@ -1,0 +1,10 @@
+environment     ansible_ssh_host=localhost
+a001.europe.ru.fasthome.io
+
+[develop]
+
+[production]
+a001.europe.ru.fasthome.io
+
+[local]
+environment     ansible_connection=local

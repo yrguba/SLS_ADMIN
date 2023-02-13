@@ -1,0 +1,20 @@
+---
+- name: Check NGINX configs
+  shell: "/usr/sbin/nginx -t"
+  register: nginx_config_status
+
+- name: NGINX test status
+  debug:
+    msg: "{{ nginx_config_status }}"
+
+- name: NGINX test status
+  debug:
+    msg: "{{ nginx_config_status.rc }}"
+
+- name: Service NGINX restart and enable on boot
+  systemd:
+    name: nginx
+    state: reloaded
+    enabled: yes
+    daemon_reload: yes
+  when: nginx_config_status.rc == 0

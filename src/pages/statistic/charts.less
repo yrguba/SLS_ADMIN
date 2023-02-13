@@ -1,0 +1,52 @@
+.devices-table {
+  tr td {
+    cursor: pointer;
+  }
+}
+
+.devices-charts {
+  position: relative;
+  padding: 0;
+  border: 1px solid #ddd;
+  margin: 0;
+  z-index: 10;
+
+  li {
+    position: relative;
+    list-style: none;
+    padding: 5px 2px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #ddd;
+    cursor: pointer;
+
+    span {
+      display: block;
+      padding: 0 7px;
+    }
+  }
+}
+
+.charts-grid {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 44px);
+  top: 22px;
+  left: 0;
+  margin: 0;
+
+  span {
+    width: 20%;
+    border-left: 1px solid #ddd;
+  }
+}
+
+.charts-grid-numbers {
+  display: flex;
+
+  span {
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+  }
+}

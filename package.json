@@ -1,0 +1,63 @@
+{
+  "name": "slsadmin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@babel/polyfill": "^7.11.5",
+    "@svgr/webpack": "^5.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.19.5",
+    "axios": "^0.20.0",
+    "chart.js": "^3.7.1",
+    "connected-react-router": "^6.9.2",
+    "craco": "^0.0.3",
+    "craco-less": "^1.17.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.39",
+    "react": "^16.13.1",
+    "react-avatar": "^5.0.1",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "^16.13.1",
+    "react-input-mask": "^2.0.4",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^5.3.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "sass-loader": "^10.2.1",
+    "universal-cookie": "^4.0.4",
+    "webpack": "4.42.0",
+    "webpack-encoding-plugin": "^0.3.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "bundle": "webpack --mode production"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.20.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

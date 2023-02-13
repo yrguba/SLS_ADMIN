@@ -1,0 +1,10 @@
+---
+node_locale: "en_US.UTF-8"
+
+user:
+  user: "fasthome"
+  group: "fasthome"
+
+project:
+  root: /data/projects/fasthome/admin.fasthome.io
+  release: /data/projects/fasthome/admin.fasthome.io/release

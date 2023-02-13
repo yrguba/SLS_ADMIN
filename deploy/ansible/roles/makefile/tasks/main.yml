@@ -1,0 +1,21 @@
+---
+- hosts: all
+  tasks:
+
+    - name: Setup vue env config
+      template:
+        src: "{{ work_dir }}/deploy/ansible/templates/env-develop.j2"
+        dest: "{{ work_dir }}/.env"
+        mode: 0644
+      tags:
+        - develop
+        - makefile
+
+    - name: Setup vue env config
+      template:
+        src: "{{ work_dir }}/deploy/ansible/templates/env-production.j2"
+        dest: "{{ work_dir }}/.env"
+        mode: 0644
+      tags:
+        - production
+        - makefile

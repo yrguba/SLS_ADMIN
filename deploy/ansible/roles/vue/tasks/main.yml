@@ -1,0 +1,22 @@
+---
+- name: Check to exists release folder
+  stat: "path={{ project.release }}"
+  register: release_exists
+
+- name: Remove current release link
+  file:
+    path: "{{ project.release }}"
+    state: absent
+  when: release_exists.stat.exists == True
+  tags:
+    - production
+
+- name: Make release link
+  file:
+    src: "{{ project.root }}/{{ version }}"
+    dest: "{{ project.release }}"
+    owner: "{{ user.user }}"
+    group: "{{ user.group }}"
+    state: link
+  tags:
+    - production
