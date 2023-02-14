@@ -31,7 +31,7 @@
     "redux-thunk": "^2.4.1",
     "sass-loader": "^10.2.1",
     "universal-cookie": "^4.0.4",
-    "webpack": "4.42.0",
+    "webpack": "4.44.2",
     "webpack-encoding-plugin": "^0.3.1"
   },
   "scripts": {
