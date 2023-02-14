@@ -1,8 +1,17 @@
-export const API_HOST = process.env.API_HOST || "https://api.fasthome.io";
-export const API_URL = process.env.API_URL || "https://api.fasthome.io/api/v1.1";
-export const API_WATCH_URL = process.env.API_URL || "https://watch-kit.fasthome.io/api";
-export const ADMIN_URL = process.env.API_URL || "https://admin.fasthome.io";
-export const SECRET = JSON.parse(process.env.REACT_APP_SECRET) || {
+// export const API_HOST = process.env.API_HOST || "https://api.fasthome.io";
+// export const API_URL = process.env.API_URL || "https://api.fasthome.io/api/v1.1";
+// export const API_WATCH_URL = process.env.API_URL || "https://watch-kit.fasthome.io/api";
+// export const ADMIN_URL = process.env.API_URL || "https://admin.fasthome.io";
+// export const SECRET = JSON.parse(process.env.REACT_APP_SECRET) || {
+//     client_secret: "h1Ualk42DmMioIAYQhxXaTqKPvRrxgwNaIicAcpi",
+//     grant_type: "password",
+//     client_id: 5
+// }
+export const API_HOST = "https://api.fasthome.io";
+export const API_URL = "https://api.fasthome.io/api/v1.1";
+export const API_WATCH_URL = "https://watch-kit.fasthome.io/api";
+export const ADMIN_URL = "https://admin.fasthome.io";
+export const SECRET = {
     client_secret: "h1Ualk42DmMioIAYQhxXaTqKPvRrxgwNaIicAcpi",
     grant_type: "password",
     client_id: 5
