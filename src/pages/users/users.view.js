@@ -191,7 +191,7 @@ function UsersView(props) {
   }, [paginationState, queryEmailString]);
 
   const searchUser = (event) => {
-    setQueryEmailString(event.target.value.toLowerCase());
+    setQueryEmailString(event.target.value);
   };
 
   const onChangePage = (page, size) => {
